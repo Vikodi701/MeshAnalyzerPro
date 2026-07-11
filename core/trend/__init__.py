@@ -1,0 +1,1 @@
+from core.trend.analyzer import TrendAnalyzer

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="docGradient" x1="4" y1="3" x2="20" y2="21" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+
+    <linearGradient id="pulseGradient" x1="7" y1="12" x2="17" y2="12" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+
+    <linearGradient id="checkGradient" x1="14.5" y1="15.5" x2="21" y2="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rapor / Belge -->
+  <path d="M7 3.75H14.5L18 7.25V18.5C18 19.3284 17.3284 20 16.5 20H7C5.89543 20 5 19.1046 5 18V5.75C5 4.64543 5.89543 3.75 7 3.75Z"
+        stroke="url(#docGradient)" stroke-width="1.8" stroke-linejoin="round"/>
+
+  <!-- Belgenin katlanmış köşesi -->
+  <path d="M14.5 3.75V6.5C14.5 7.19036 15.0596 7.75 15.75 7.75H18"
+        stroke="url(#docGradient)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Nabız / analiz çizgisi -->
+  <path d="M7.5 12H9.2L10.3 9.8L11.9 14.2L13.1 11.6L14.1 12.9H16.5"
+        stroke="url(#pulseGradient)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Alt bilgi çizgileri -->
+  <path d="M7.8 9H12.2" stroke="url(#docGradient)" stroke-width="1.4" stroke-linecap="round"/>
+  <path d="M7.8 15.5H12.5" stroke="url(#docGradient)" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- Onay rozeti -->
+  <circle cx="17.5" cy="17.5" r="3.25" fill="url(#checkGradient)"/>
+  <path d="M16.1 17.5L17.05 18.45L18.9 16.55"
+        stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

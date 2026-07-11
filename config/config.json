@@ -1,0 +1,19 @@
+{
+    "max_total_range": 0.6,
+    "max_rms": 0.25,
+    "max_plane_deviation": 0.3,
+    "theme": "dark",
+    "language": "en",
+    "default_heatmap_palette": "turbo",
+    "default_topography_palette": "terrain",
+    "default_surface_palette": "turbo",
+    "default_surface_view": "default",
+    "report_include_graphs": true,
+    "report_include_diagnostics": true,
+    "report_include_mesh_table": true,
+    "export_jpg_show_cell_values": true,
+    "appearance_show_table_values": true,
+    "appearance_show_colorbar": true,
+    "appearance_show_hover_info": true,
+    "appearance_start_maximized": true
+}
