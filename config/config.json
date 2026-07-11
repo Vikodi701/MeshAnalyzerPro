@@ -3,7 +3,7 @@
     "max_rms": 0.25,
     "max_plane_deviation": 0.3,
     "theme": "dark",
-    "language": "en",
+    "language": "tr",
     "default_heatmap_palette": "turbo",
     "default_topography_palette": "terrain",
     "default_surface_palette": "turbo",

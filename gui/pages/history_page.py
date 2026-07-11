@@ -15,9 +15,11 @@ from PySide6.QtWidgets import (
     QInputDialog,
     QHeaderView,
     QAbstractItemView,
+    QToolTip,
 )
 
 from PySide6.QtCore import Qt, Signal
+from PySide6.QtGui import QCursor
 
 from database.database import Database
 from core.compare import MeshCompare
@@ -113,6 +115,8 @@ class HistoryPage(QWidget):
             QAbstractItemView.SelectionMode.SingleSelection
         )
         self.table.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.table.setMouseTracking(True)
+        self.table.viewport().setMouseTracking(True)
         self.table.setSortingEnabled(True)
         self.table.verticalHeader().setVisible(False)
         self.table.horizontalHeader().setStretchLastSection(True)
@@ -138,8 +142,37 @@ class HistoryPage(QWidget):
         self.btn_clear.clicked.connect(self.clear_history)
         self.table.cellDoubleClicked.connect(self.open_selected_mesh)
         self.table.itemSelectionChanged.connect(self.update_button_state)
+        self.table.cellEntered.connect(self.show_label_note_tooltip)
 
         self.retranslate()
+
+    def show_label_note_tooltip(self, row, column):
+        """
+        EXE çıktısında bazı sistemlerde QTableWidgetItem.setToolTip()
+        güvenilir tetiklenmeyebiliyor. Bu yüzden Etiket ve Not kolonları
+        için tooltip'i mouse hareketinde manuel gösteriyoruz.
+        """
+        if column not in (10, 11):
+            QToolTip.hideText()
+            return
+
+        item = self.table.item(row, column)
+
+        if item is None:
+            QToolTip.hideText()
+            return
+
+        text = str(item.data(Qt.ItemDataRole.UserRole) or "")
+
+        if not text.strip():
+            QToolTip.hideText()
+            return
+
+        QToolTip.showText(
+            QCursor.pos(),
+            text,
+            self.table.viewport()
+        )
 
     def selected_mesh_id(self):
         selected = self.table.selectedItems()

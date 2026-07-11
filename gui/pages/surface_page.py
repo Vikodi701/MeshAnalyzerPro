@@ -3,8 +3,6 @@ MeshAnalyzer Pro
 3D Surface Page
 """
 
-from pathlib import Path
-
 from PySide6.QtWidgets import (
     QWidget,
     QVBoxLayout,
@@ -26,6 +24,7 @@ from graphs.widgets.surface_widget import SurfaceWidget
 from languages import LanguageManager
 from gui.widgets.summary_card import SummaryCard
 from gui.widgets.info_icon import InfoIcon
+from utils.app_icon import resource_path
 
 
 class SurfacePage(QWidget):
@@ -365,7 +364,7 @@ class SurfacePage(QWidget):
             groove_fill = "#94A3B8"
             handle_border = "#0F172A"
             separator_color = "#CBD5E1"
-            check_icon = Path("assets/icons/check_black.svg").resolve()
+            check_icon = resource_path("assets", "icons", "check_black.svg")
         else:
             text_color = "#F8FAFC"
             muted_color = "#CBD5E1"
@@ -377,7 +376,7 @@ class SurfacePage(QWidget):
             groove_fill = "#64748B"
             handle_border = "#F8FAFC"
             separator_color = "#334155"
-            check_icon = Path("assets/icons/check_white.svg").resolve()
+            check_icon = resource_path("assets", "icons", "check_white.svg")
 
         check_icon_path = check_icon.as_posix()
 
@@ -452,8 +451,8 @@ class SurfacePage(QWidget):
 
         QCheckBox::indicator:checked {{
             border: 1px solid {border_color};
-            background-color: transparent;
-            image: url({check_icon_path});
+            background-color: {fill_color};
+            image: url("{check_icon_path}");
         }}
 
         QSlider::groove:horizontal {{

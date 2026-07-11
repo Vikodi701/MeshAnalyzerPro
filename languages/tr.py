@@ -113,7 +113,7 @@ TEXT = {
         "🟢 UYGUN: Değerler güvenli aralıktadır.<br>"
         "🟡 KABUL EDİLEBİLİR: Değerler limit içinde ancak sınıra yakındır.<br>"
         "🟠 UYARI: Değerler tolerans üstünde, kontrol önerilir.<br>"
-        "🔴 BAŞARISIZ: Değerler tolerans dışındadır.<br><br>"
+        "🔴 BAŞARISIZ: Değerler tolerans dışındadır."
     ),
 
     "tooltip_machine_health": (
@@ -129,7 +129,7 @@ TEXT = {
         "🟢 90–100: Mükemmel<br>"
         "🟢 75–89: İyi<br>"
         "🟡 50–74: Kabul Edilebilir<br>"
-        "🔴 0–49: Kritik<br><br>"
+        "🔴 0–49: Kritik<br>"
     ),
 
     "tooltip_total_range": (
@@ -145,7 +145,7 @@ TEXT = {
         "🟢 0.300–0.450 mm: İyi<br>"
         "🟡 0.450–0.600 mm: Kabul edilebilir<br>"
         "🔴 >0.600 mm: Kritik<br><br>"
-        "<b>Birim</b><br>mm<br><br>"
+        "<b>Birim</b><br>mm"
     ),
 
     "tooltip_rms": (
@@ -159,7 +159,7 @@ TEXT = {
         "🟢 0.000–0.120 mm: Mükemmel<br>"
         "🟢 0.120–0.180 mm: İyi<br>"
         "🟡 0.180–0.250 mm: Kabul edilebilir<br>"
-        "🔴 >0.250 mm: Kritik<br><br>"
+        "🔴 >0.250 mm: Kritik<br>"
     ),
 
     "tooltip_plane_deviation": (
@@ -177,7 +177,7 @@ TEXT = {
         "🟢 0.000–0.150 mm: Mükemmel<br>"
         "🟢 0.150–0.220 mm: İyi<br>"
         "🟡 0.220–0.300 mm: Kabul edilebilir<br>"
-        "🔴 >0.300 mm: Kritik<br><br>"
+        "🔴 >0.300 mm: Kritik<br>"
     ),
 
     "tooltip_mesh_size": (
@@ -232,7 +232,7 @@ TEXT = {
         "🟡 Dikkat<br>"
         "🔴 Kontrol Gerekli<br><br>"
         "<b>İpucu</b><br>"
-        "RMS, Toplam Sapma, Düzlem Sapması ve Makine Sağlığı birlikte değerlendirilir.<br>"
+        "RMS, Toplam Sapma, Düzlem Sapması ve Makine Sağlığı birlikte değerlendirilir."
     ),
 
     "dashboard_title": "MeshAnalyzer Pro Paneli",
@@ -748,7 +748,7 @@ TEXT.update({
     "check_recommended": "Kontrol önerilir",
     "mesh_check_recommended": "Mesh tolerans üstünde, kontrol önerilir",
     "conf_help_card_title": "Conf. Dosyası Nasıl Alınır",
-    "conf_help_wiki_button": "Anycubic Wiki",
+    "conf_help_wiki_button": "1. Anycubic Wiki",
     "conf_help_device_button": "2. Cihaz Üzerinden",
     "conf_help_wiki_title": "Anycubic Wiki ile Conf. Dosyası Alma",
     "conf_help_wiki_message": "https://wiki.anycubic.com/en/fdm-3d-printer/kobra-s1-combo/fault-log-export bu siteyi açın.\\n\\nSitedeki adımları takip edin ve ardından USB`deki AC_CONF.pack dosyasını açın.\\n\\nUYARI: Bu yöntemde AC_LOG.pack dosyasını kullanmayın!",

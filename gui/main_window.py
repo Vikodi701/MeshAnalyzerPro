@@ -58,6 +58,7 @@ class MainWindow(QMainWindow):
 
     def apply_startup_window_state(self):
         self.showMaximized()
+        apply_app_icon(window=self)
 
     def apply_current_appearance_settings(self):
         # Pencere durumu ayarlar kaydedildiğinde değiştirilmez.

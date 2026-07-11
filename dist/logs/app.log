@@ -1,0 +1,29 @@
+2026-07-11 23:47:01,812 | INFO | matplotlib.font_manager | generated new fontManager
+2026-07-11 23:47:02,392 | INFO | MeshAnalyzerPro | MeshAnalyzer Pro başlatılıyor.
+2026-07-11 23:47:05,038 | INFO | MeshAnalyzerPro | Ana pencere açıldı.
+2026-07-11 23:51:07,852 | INFO | MeshAnalyzerPro | Analysis başladı: AC_CONF1
+2026-07-11 23:51:07,852 | INFO | MeshAnalyzerPro | Geometry hesaplanıyor.
+2026-07-11 23:51:07,861 | INFO | MeshAnalyzerPro | Tolerance hesaplanıyor.
+2026-07-11 23:51:07,862 | INFO | MeshAnalyzerPro | Health Score hesaplanıyor.
+2026-07-11 23:51:07,863 | INFO | MeshAnalyzerPro | Trend hesaplanıyor.
+2026-07-11 23:51:07,868 | INFO | MeshAnalyzerPro | Klasik diagnostics hesaplanıyor.
+2026-07-11 23:51:07,877 | INFO | MeshAnalyzerPro | Smart Diagnostic hesaplanıyor.
+2026-07-11 23:51:07,900 | INFO | MeshAnalyzerPro | Analysis bitti: AC_CONF1 | 47.39 ms
+2026-07-11 23:51:08,333 | INFO | MeshAnalyzerPro | Analysis cache kullanıldı: AC_CONF1
+2026-07-11 23:51:08,389 | INFO | MeshAnalyzerPro | Analysis başladı: AC_CONF1
+2026-07-11 23:51:08,389 | INFO | MeshAnalyzerPro | Geometry hesaplanıyor.
+2026-07-11 23:51:08,390 | INFO | MeshAnalyzerPro | Tolerance hesaplanıyor.
+2026-07-11 23:51:08,391 | INFO | MeshAnalyzerPro | Health Score hesaplanıyor.
+2026-07-11 23:51:08,392 | INFO | MeshAnalyzerPro | Trend hesaplanıyor.
+2026-07-11 23:51:08,396 | INFO | MeshAnalyzerPro | Klasik diagnostics hesaplanıyor.
+2026-07-11 23:51:08,402 | INFO | MeshAnalyzerPro | Smart Diagnostic hesaplanıyor.
+2026-07-11 23:51:08,422 | INFO | MeshAnalyzerPro | Analysis bitti: AC_CONF1 | 32.10 ms
+2026-07-11 23:58:55,532 | INFO | MeshAnalyzerPro | MeshAnalyzer Pro kapatılıyor.
+2026-07-12 00:04:13,445 | INFO | matplotlib.font_manager | generated new fontManager
+2026-07-12 00:04:14,058 | INFO | MeshAnalyzerPro | MeshAnalyzer Pro başlatılıyor.
+2026-07-12 00:04:17,005 | INFO | MeshAnalyzerPro | Ana pencere açıldı.
+2026-07-12 00:31:43,268 | INFO | MeshAnalyzerPro | MeshAnalyzer Pro kapatılıyor.
+2026-07-12 00:36:25,394 | INFO | matplotlib.font_manager | generated new fontManager
+2026-07-12 00:36:25,959 | INFO | MeshAnalyzerPro | MeshAnalyzer Pro başlatılıyor.
+2026-07-12 00:36:28,985 | INFO | MeshAnalyzerPro | Ana pencere açıldı.
+2026-07-12 00:36:36,243 | INFO | MeshAnalyzerPro | MeshAnalyzer Pro kapatılıyor.

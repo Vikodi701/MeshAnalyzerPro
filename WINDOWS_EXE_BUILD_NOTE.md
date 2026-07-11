@@ -1,17 +1,28 @@
-# Windows EXE build note
+# Windows EXE icon fix
 
-Ekran görüntüsündeki farkın sebebi EXE içinde theme/assets dosyalarının doğru bulunamamasıydı.
-Bu paketle:
-- themes/*.qss artık resource_path ile okunur.
-- sidebar/toolbar SVG iconları resource_path ile okunur.
-- PyInstaller için MeshAnalyzerPro.spec eklendi.
+Bu sürümde EXE icon için üç katmanlı düzeltme var:
 
-Önerilen build:
-    pyinstaller MeshAnalyzerPro.spec
+1. `MeshAnalyzerPro.spec` içinde icon yolu absolute path olarak verildi.
+2. `app.ico` ve `app.png` EXE içine ayrıca kök dizine de dahil edildi.
+3. Windows HWND seviyesinde `WM_SETICON` ile küçük/büyük pencere icon'u yeniden uygulanıyor.
 
-Tek komutla build gerekiyorsa:
-    pyinstaller --noconsole --name MeshAnalyzerPro --icon assets/icons/app.ico --add-data "assets;assets" --add-data "themes;themes" --add-data "config;config" --add-data "help;help" --add-data "languages;languages" main.py
+Önerilen build komutu:
 
-Not:
-Windows'ta --add-data ayıracı noktalı virgüldür (;).
-Linux/macOS tarafında iki nokta üst üste (:) kullanılır.
+```bat
+python -m PyInstaller --clean --noconfirm MeshAnalyzerPro.spec
+```
+
+Eğer Windows hâlâ eski icon gösterirse bu genelde Windows icon cache / eski taskbar pin cache sebebidir.
+
+Kontrol listesi:
+
+```bat
+rmdir /s /q build
+rmdir /s /q dist
+python -m PyInstaller --clean --noconfirm MeshAnalyzerPro.spec
+```
+
+Sonra:
+- Eski taskbar pin'ini kaldırın.
+- Yeni EXE'yi farklı klasörden veya farklı isimle deneyin.
+- Gerekirse Windows Explorer'ı yeniden başlatın veya icon cache'i temizleyin.

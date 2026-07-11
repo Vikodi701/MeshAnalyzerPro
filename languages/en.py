@@ -113,7 +113,7 @@ TEXT = {
     "🟢 PASS: Values are in the safe range.<br>"
     "🟡 ACCEPTABLE: Values are within the limit but close to it.<br>"
     "🟠 WARNING: Values are above tolerance; check recommended.<br>"
-    "🔴 FAIL: Values are outside tolerance.<br><br>"
+    "🔴 FAIL: Values are outside tolerance."
 ),
 
 "tooltip_machine_health": (
@@ -129,7 +129,7 @@ TEXT = {
     "🟢 90–100 : Excellent<br>"
     "🟢 75–89 : Good<br>"
     "🟡 50–74 : Acceptable<br>"
-    "🔴 0–49 : Critical<br><br>"
+    "🔴 0–49 : Critical<br>"
 ),
 
     "tooltip_total_range": (
@@ -144,7 +144,7 @@ TEXT = {
         "🟢 0.120–0.180 mm : Good<br>"
         "🟡 0.180–0.250 mm : Acceptable<br>"
         "🔴 >0.250 mm : Critical<br><br>"
-        "<b>Unit</b><br>mm<br><br>"
+        "<b>Unit</b><br>mm"
     ),
 
     "tooltip_rms": (
@@ -157,7 +157,7 @@ TEXT = {
         "🟢 0.000–0.120 mm : Excellent<br>"
         "🟢 0.120–0.180 mm : Good<br>"
         "🟡 0.180–0.250 mm : Acceptable<br>"
-        "🔴 >0.250 mm : Critical<br><br>"
+        "🔴 >0.250 mm : Critical<br>"
     ),
 
     "tooltip_plane_deviation": (
@@ -174,7 +174,7 @@ TEXT = {
         "🟢 0.000–0.120 mm : Excellent<br>"
         "🟢 0.120–0.180 mm : Good<br>"
         "🟡 0.180–0.250 mm : Acceptable<br>"
-        "🔴 >0.250 mm : Critical<br><br>"
+        "🔴 >0.250 mm : Critical<br>"
     ),
 
     "tooltip_mesh_size": (
@@ -745,7 +745,7 @@ TEXT.update({
     "check_recommended": "Check recommended",
     "mesh_check_recommended": "Mesh is above tolerance; check recommended",
     "conf_help_card_title": "How to Get Conf. File",
-    "conf_help_wiki_button": "Anycubic Wiki",
+    "conf_help_wiki_button": "1. Anycubic Wiki",
     "conf_help_device_button": "2. From Device",
     "conf_help_wiki_title": "Get Conf. File via Anycubic Wiki",
     "conf_help_wiki_message": "Open this page: https://wiki.anycubic.com/en/fdm-3d-printer/kobra-s1-combo/fault-log-export\\n\\nFollow the steps on the page, then open the AC_CONF.pack file from the USB drive.\\n\\nWARNING: Do not use AC_LOG.pack with this method!",

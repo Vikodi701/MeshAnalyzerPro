@@ -1,17 +1,23 @@
 # -*- mode: python ; coding: utf-8 -*-
 
+from pathlib import Path
+
 block_cipher = None
+project_dir = Path(SPECPATH)
+icon_file = project_dir / 'assets' / 'icons' / 'app.ico'
 
 a = Analysis(
     ['main.py'],
-    pathex=[],
+    pathex=[str(project_dir)],
     binaries=[],
     datas=[
-        ('assets', 'assets'),
-        ('themes', 'themes'),
-        ('config', 'config'),
-        ('help', 'help'),
-        ('languages', 'languages'),
+        (str(project_dir / 'assets'), 'assets'),
+        (str(project_dir / 'themes'), 'themes'),
+        (str(project_dir / 'config'), 'config'),
+        (str(project_dir / 'help'), 'help'),
+        (str(project_dir / 'languages'), 'languages'),
+        (str(project_dir / 'assets' / 'icons' / 'app.ico'), '.'),
+        (str(project_dir / 'assets' / 'icons' / 'app.png'), '.'),
     ],
     hiddenimports=[
         'PySide6.QtSvg',
@@ -40,7 +46,7 @@ exe = EXE(
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
-    upx=True,
+    upx=False,
     upx_exclude=[],
     runtime_tmpdir=None,
     console=False,
@@ -48,5 +54,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon='assets/icons/app.ico',
+    icon=str(icon_file),
 )
