@@ -371,3 +371,4 @@ MeshAnalyzerPro/
 ├── main.py
 └── MeshAnalyzerPro.spec
 ```
+"# MeshAnalyzerPro" 
