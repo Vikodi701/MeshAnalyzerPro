@@ -7,3 +7,23 @@
 2026-07-11 21:20:15,704 | INFO | MeshAnalyzerPro | MeshAnalyzer Pro başlatılıyor.
 2026-07-11 21:20:19,303 | INFO | MeshAnalyzerPro | Ana pencere açıldı.
 2026-07-11 21:29:33,907 | INFO | MeshAnalyzerPro | MeshAnalyzer Pro kapatılıyor.
+2026-07-11 23:05:56,184 | INFO | MeshAnalyzerPro | MeshAnalyzer Pro başlatılıyor.
+2026-07-11 23:05:59,940 | INFO | MeshAnalyzerPro | Ana pencere açıldı.
+2026-07-11 23:06:17,683 | INFO | MeshAnalyzerPro | Analysis başladı: AC_CONF1
+2026-07-11 23:06:17,683 | INFO | MeshAnalyzerPro | Geometry hesaplanıyor.
+2026-07-11 23:06:17,692 | INFO | MeshAnalyzerPro | Tolerance hesaplanıyor.
+2026-07-11 23:06:17,695 | INFO | MeshAnalyzerPro | Health Score hesaplanıyor.
+2026-07-11 23:06:17,697 | INFO | MeshAnalyzerPro | Trend hesaplanıyor.
+2026-07-11 23:06:17,702 | INFO | MeshAnalyzerPro | Klasik diagnostics hesaplanıyor.
+2026-07-11 23:06:17,713 | INFO | MeshAnalyzerPro | Smart Diagnostic hesaplanıyor.
+2026-07-11 23:06:17,740 | INFO | MeshAnalyzerPro | Analysis bitti: AC_CONF1 | 55.57 ms
+2026-07-11 23:06:18,272 | INFO | MeshAnalyzerPro | Analysis cache kullanıldı: AC_CONF1
+2026-07-11 23:06:18,346 | INFO | MeshAnalyzerPro | Analysis başladı: AC_CONF1
+2026-07-11 23:06:18,346 | INFO | MeshAnalyzerPro | Geometry hesaplanıyor.
+2026-07-11 23:06:18,347 | INFO | MeshAnalyzerPro | Tolerance hesaplanıyor.
+2026-07-11 23:06:18,349 | INFO | MeshAnalyzerPro | Health Score hesaplanıyor.
+2026-07-11 23:06:18,351 | INFO | MeshAnalyzerPro | Trend hesaplanıyor.
+2026-07-11 23:06:18,355 | INFO | MeshAnalyzerPro | Klasik diagnostics hesaplanıyor.
+2026-07-11 23:06:18,364 | INFO | MeshAnalyzerPro | Smart Diagnostic hesaplanıyor.
+2026-07-11 23:06:18,385 | INFO | MeshAnalyzerPro | Analysis bitti: AC_CONF1 | 37.96 ms
+2026-07-11 23:07:06,285 | INFO | MeshAnalyzerPro | MeshAnalyzer Pro kapatılıyor.

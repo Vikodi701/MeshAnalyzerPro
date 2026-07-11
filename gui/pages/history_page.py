@@ -184,6 +184,10 @@ class HistoryPage(QWidget):
                 item = HistoryTableItem(self.format_value(column_index, value))
                 item.setTextAlignment(Qt.AlignmentFlag.AlignCenter)
                 item.setData(Qt.ItemDataRole.UserRole, value)
+
+                if column_index in (10, 11) and value:
+                    item.setToolTip(str(value))
+
                 self.table.setItem(row_index, column_index, item)
 
         self.table.resizeColumnsToContents()
